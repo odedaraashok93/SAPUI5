@@ -11,7 +11,9 @@ sap.ui.define([
 		 * @memberOf webapp.projectcreate.view.App
 		 */
 		onInit: function () {
-
+                   
+			// apply content density mode to root view
+			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
 		},
 
 		/**
